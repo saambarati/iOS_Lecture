@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528BB275156388810092349C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB274156388810092349C /* UIKit.framework */; };
+		528BB277156388810092349C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB276156388810092349C /* Foundation.framework */; };
+		528BB279156388810092349C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB278156388810092349C /* CoreGraphics.framework */; };
+		528BB27F156388810092349C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528BB27D156388810092349C /* InfoPlist.strings */; };
+		528BB281156388810092349C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB280156388810092349C /* main.m */; };
+		528BB285156388810092349C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB284156388810092349C /* AppDelegate.m */; };
+		528BB288156388810092349C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB287156388810092349C /* ViewController.m */; };
+		528BB28B156388810092349C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528BB289156388810092349C /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		528BB270156388810092349C /* Dehkhoda_Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dehkhoda_Class.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528BB274156388810092349C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		528BB276156388810092349C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		528BB278156388810092349C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		528BB27C156388810092349C /* Dehkhoda_Class-Info.plist */ = {isa = PBXFileReference; path = "Dehkhoda_Class-Info.plist"; sourceTree = "<group>"; };
+		528BB27E156388810092349C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		528BB280156388810092349C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		528BB282156388810092349C /* Dehkhoda_Class-Prefix.pch */ = {isa = PBXFileReference; path = "Dehkhoda_Class-Prefix.pch"; sourceTree = "<group>"; };
+		528BB283156388810092349C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		528BB284156388810092349C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		528BB286156388810092349C /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		528BB287156388810092349C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		528BB28A156388810092349C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		528BB26D156388810092349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528BB275156388810092349C /* UIKit.framework in Frameworks */,
+				528BB277156388810092349C /* Foundation.framework in Frameworks */,
+				528BB279156388810092349C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		528BB265156388810092349C = {
+			isa = PBXGroup;
+			children = (
+				528BB27A156388810092349C /* Dehkhoda_Class */,
+				528BB273156388810092349C /* Frameworks */,
+				528BB271156388810092349C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		528BB271156388810092349C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				528BB270156388810092349C /* Dehkhoda_Class.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		528BB273156388810092349C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				528BB274156388810092349C /* UIKit.framework */,
+				528BB276156388810092349C /* Foundation.framework */,
+				528BB278156388810092349C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528BB27A156388810092349C /* Dehkhoda_Class */ = {
+			isa = PBXGroup;
+			children = (
+				528BB283156388810092349C /* AppDelegate.h */,
+				528BB284156388810092349C /* AppDelegate.m */,
+				528BB286156388810092349C /* ViewController.h */,
+				528BB287156388810092349C /* ViewController.m */,
+				528BB289156388810092349C /* ViewController.xib */,
+				528BB27B156388810092349C /* Supporting Files */,
+			);
+			path = Dehkhoda_Class;
+			sourceTree = "<group>";
+		};
+		528BB27B156388810092349C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				528BB27C156388810092349C /* Dehkhoda_Class-Info.plist */,
+				528BB27D156388810092349C /* InfoPlist.strings */,
+				528BB280156388810092349C /* main.m */,
+				528BB282156388810092349C /* Dehkhoda_Class-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		528BB26F156388810092349C /* Dehkhoda_Class */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528BB28E156388810092349C /* Build configuration list for PBXNativeTarget "Dehkhoda_Class" */;
+			buildPhases = (
+				528BB26C156388810092349C /* Sources */,
+				528BB26D156388810092349C /* Frameworks */,
+				528BB26E156388810092349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dehkhoda_Class;
+			productName = Dehkhoda_Class;
+			productReference = 528BB270156388810092349C /* Dehkhoda_Class.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		528BB267156388810092349C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Saam Barati Inc";
+			};
+			buildConfigurationList = 528BB26A156388810092349C /* Build configuration list for PBXProject "Dehkhoda_Class" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 528BB265156388810092349C;
+			productRefGroup = 528BB271156388810092349C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				528BB26F156388810092349C /* Dehkhoda_Class */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528BB26E156388810092349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528BB27F156388810092349C /* InfoPlist.strings in Resources */,
+				528BB28B156388810092349C /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		528BB26C156388810092349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528BB281156388810092349C /* main.m in Sources */,
+				528BB285156388810092349C /* AppDelegate.m in Sources */,
+				528BB288156388810092349C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		528BB27D156388810092349C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528BB27E156388810092349C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		528BB289156388810092349C /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528BB28A156388810092349C /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		528BB28C156388810092349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		528BB28D156388810092349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		528BB28F156388810092349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dehkhoda_Class/Dehkhoda_Class-Prefix.pch";
+				INFOPLIST_FILE = "Dehkhoda_Class/Dehkhoda_Class-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		528BB290156388810092349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dehkhoda_Class/Dehkhoda_Class-Prefix.pch";
+				INFOPLIST_FILE = "Dehkhoda_Class/Dehkhoda_Class-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		528BB26A156388810092349C /* Build configuration list for PBXProject "Dehkhoda_Class" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528BB28C156388810092349C /* Debug */,
+				528BB28D156388810092349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528BB28E156388810092349C /* Build configuration list for PBXNativeTarget "Dehkhoda_Class" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528BB28F156388810092349C /* Debug */,
+				528BB290156388810092349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 528BB267156388810092349C /* Project object */;
+}
