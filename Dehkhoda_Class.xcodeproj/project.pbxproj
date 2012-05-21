@@ -7,30 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523EC36F156480C7007DA368 /* heic0702a_h.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 523EC36E156480C7007DA368 /* heic0702a_h.jpg */; };
 		528BB275156388810092349C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB274156388810092349C /* UIKit.framework */; };
 		528BB277156388810092349C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB276156388810092349C /* Foundation.framework */; };
 		528BB279156388810092349C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB278156388810092349C /* CoreGraphics.framework */; };
 		528BB27F156388810092349C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 528BB27D156388810092349C /* InfoPlist.strings */; };
 		528BB281156388810092349C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB280156388810092349C /* main.m */; };
 		528BB285156388810092349C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB284156388810092349C /* AppDelegate.m */; };
-		528BB288156388810092349C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB287156388810092349C /* ViewController.m */; };
 		528BB28B156388810092349C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528BB289156388810092349C /* ViewController.xib */; };
+		528BB29A156389390092349C /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB299156389390092349C /* AnimationView.m */; };
+		528BB29D156389500092349C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528BB29C156389500092349C /* ViewController.m */; };
+		528BB29F156395400092349C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BB29E156395400092349C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523EC36E156480C7007DA368 /* heic0702a_h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heic0702a_h.jpg; sourceTree = "<group>"; };
 		528BB270156388810092349C /* Dehkhoda_Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dehkhoda_Class.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528BB274156388810092349C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		528BB276156388810092349C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		528BB278156388810092349C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		528BB27C156388810092349C /* Dehkhoda_Class-Info.plist */ = {isa = PBXFileReference; path = "Dehkhoda_Class-Info.plist"; sourceTree = "<group>"; };
+		528BB27C156388810092349C /* Dehkhoda_Class-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dehkhoda_Class-Info.plist"; sourceTree = "<group>"; };
 		528BB27E156388810092349C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		528BB280156388810092349C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		528BB282156388810092349C /* Dehkhoda_Class-Prefix.pch */ = {isa = PBXFileReference; path = "Dehkhoda_Class-Prefix.pch"; sourceTree = "<group>"; };
-		528BB283156388810092349C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		528BB282156388810092349C /* Dehkhoda_Class-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dehkhoda_Class-Prefix.pch"; sourceTree = "<group>"; };
+		528BB283156388810092349C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		528BB284156388810092349C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		528BB286156388810092349C /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		528BB287156388810092349C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		528BB28A156388810092349C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		528BB298156389390092349C /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		528BB299156389390092349C /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		528BB29B156389500092349C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		528BB29C156389500092349C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		528BB29E156395400092349C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528BB29F156395400092349C /* QuartzCore.framework in Frameworks */,
 				528BB275156388810092349C /* UIKit.framework in Frameworks */,
 				528BB277156388810092349C /* Foundation.framework in Frameworks */,
 				528BB279156388810092349C /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +75,7 @@
 		528BB273156388810092349C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				528BB29E156395400092349C /* QuartzCore.framework */,
 				528BB274156388810092349C /* UIKit.framework */,
 				528BB276156388810092349C /* Foundation.framework */,
 				528BB278156388810092349C /* CoreGraphics.framework */,
@@ -77,10 +86,13 @@
 		528BB27A156388810092349C /* Dehkhoda_Class */ = {
 			isa = PBXGroup;
 			children = (
+				523EC36E156480C7007DA368 /* heic0702a_h.jpg */,
+				528BB298156389390092349C /* AnimationView.h */,
+				528BB299156389390092349C /* AnimationView.m */,
 				528BB283156388810092349C /* AppDelegate.h */,
 				528BB284156388810092349C /* AppDelegate.m */,
-				528BB286156388810092349C /* ViewController.h */,
-				528BB287156388810092349C /* ViewController.m */,
+				528BB29B156389500092349C /* ViewController.h */,
+				528BB29C156389500092349C /* ViewController.m */,
 				528BB289156388810092349C /* ViewController.xib */,
 				528BB27B156388810092349C /* Supporting Files */,
 			);
@@ -151,6 +163,7 @@
 			files = (
 				528BB27F156388810092349C /* InfoPlist.strings in Resources */,
 				528BB28B156388810092349C /* ViewController.xib in Resources */,
+				523EC36F156480C7007DA368 /* heic0702a_h.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +176,8 @@
 			files = (
 				528BB281156388810092349C /* main.m in Sources */,
 				528BB285156388810092349C /* AppDelegate.m in Sources */,
-				528BB288156388810092349C /* ViewController.m in Sources */,
+				528BB29A156389390092349C /* AnimationView.m in Sources */,
+				528BB29D156389500092349C /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +257,7 @@
 				GCC_PREFIX_HEADER = "Dehkhoda_Class/Dehkhoda_Class-Prefix.pch";
 				INFOPLIST_FILE = "Dehkhoda_Class/Dehkhoda_Class-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,6 +269,7 @@
 				GCC_PREFIX_HEADER = "Dehkhoda_Class/Dehkhoda_Class-Prefix.pch";
 				INFOPLIST_FILE = "Dehkhoda_Class/Dehkhoda_Class-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -277,6 +293,7 @@
 				528BB290156388810092349C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
