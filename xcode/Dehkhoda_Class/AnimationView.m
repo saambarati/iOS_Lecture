@@ -17,11 +17,10 @@
     
     self.animator.frame = CGRectMake(10.0f, 10.0f, 100.0f, 100.0f);
     [self addSubview:self.animator];
-//    self.animator.backgroundColor = [UIColor redColor];
-//    self.animator.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"photo.JPG"]];
-    self.animator.layer.contents = (__bridge id)[[UIImage imageNamed:@"photo.JPG"] CGImage];
-    self.animator.layer.contentsGravity = kCAGravityResizeAspect;
-    self.backgroundColor = [UIColor whiteColor];
+    self.animator.backgroundColor = [UIColor redColor];
+//    self.animator.layer.contents = (__bridge id)[[UIImage imageNamed:@"photo.JPG"] CGImage];
+//    self.animator.layer.contentsGravity = kCAGravityResizeAspect;
+    self.backgroundColor = [UIColor lightGrayColor];
     self.multipleTouchEnabled = YES;
     _t1 = nil;
     _t2 = nil;
