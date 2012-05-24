@@ -41,7 +41,7 @@
   new.animator.alpha = 0.0f;
   [UIView transitionFromView:self.view 
                       toView:new
-                    duration:1.8f
+                    duration:1.0f
                      options:UIViewAnimationOptionTransitionCurlDown
                   completion:^(BOOL completed) {
                     NSLog(@"transition completed, success: %d", completed);

@@ -13,7 +13,6 @@
 @interface AnimationView : UIView
 
 @property (nonatomic, retain) UIView *animator;
-
 @property (nonatomic, retain) UITouch *t1;
 @property (nonatomic, retain) UITouch *t2;
 

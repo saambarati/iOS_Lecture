@@ -13,15 +13,14 @@
 
   if ((self = [super initWithFrame:frame])) {
     self.animator = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 100.0f, 100.0f)];
-//    self.animator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo.JPG"] highlightedImage:nil];
-    
+    //self.animator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo.JPG"] highlightedImage:nil];
+    self.animator.backgroundColor = [UIColor redColor];
     self.animator.frame = CGRectMake(10.0f, 10.0f, 100.0f, 100.0f);
     [self addSubview:self.animator];
-    self.animator.backgroundColor = [UIColor redColor];
-//    self.animator.layer.contents = (__bridge id)[[UIImage imageNamed:@"photo.JPG"] CGImage];
-//    self.animator.layer.contentsGravity = kCAGravityResizeAspect;
+
     self.backgroundColor = [UIColor lightGrayColor];
     self.multipleTouchEnabled = YES;
+
     _t1 = nil;
     _t2 = nil;
   }
@@ -47,7 +46,8 @@ CGFloat slope(CGPoint p1, CGPoint p2)
     p1 = p2;
     p2 = temp;
   }
-  return -((p2.y - p1.y) / (p2.x - p1.x));  //return negative because the higher point on iOS screen has smaller y value, which is different than traditional cartesian coordinates
+  //return negative because the higher point on iOS screen has smaller y value, which differs from traditional cartesian coordinates
+  return -((p2.y - p1.y) / (p2.x - p1.x));  
 }
 CGFloat angle (CGPoint p1, CGPoint p2)
 {
@@ -86,7 +86,6 @@ CGFloat angle (CGPoint p1, CGPoint p2)
            withEvent:(UIEvent *)event
 {
   //NSLog(@"Touches Began");
-  //NSLog(@"Touches Count :%d", [touches count]);
   [self setTouches:[touches allObjects]];
   if (self.t1.tapCount == 2) {
     [self.animator.layer addAnimation:[self rotateForever] forKey:@"RotateForever"];
@@ -112,12 +111,6 @@ CGFloat angle (CGPoint p1, CGPoint p2)
             withEvent:(UIEvent *)event
 {
   NSLog(@"Touches Ended");
-//  self.t1 = [touches member:self.t1];
-//  self.t2 = [touches member:self.t2];
-//  if (!self.t1 && self.t2){
-//    self.t1 = self.t2; 
-//    self.t2 = nil;
-//  }
   self.t1 = self.t2 = nil;
 }
 
@@ -125,19 +118,19 @@ CGFloat angle (CGPoint p1, CGPoint p2)
 #pragma mark - Animations
 - (CABasicAnimation *)animateBounds
 {
-  if (!self.t1 || !self.t2) return nil;
-
-  CABasicAnimation *animation;
-  CGPoint p1 = [self.t1 locationInView:self];
-  CGPoint p2 = [self.t2 locationInView:self];
-  CGPoint mid = midPoint(p1, p2);
-  animation = [CABasicAnimation animationWithKeyPath:@"bounds"];
-  CGFloat dist = distance(p1, p2);
-  CGRect newB = CGRectMake(mid.x - dist/2.0f, mid.y - dist/2.0f, dist, dist);
-  //CGRect newB = CGRectMake(mid.x, mid.y, dist, dist);
-  //NSLog(@"%f %f", newB.origin.x, newB.origin.y);
-  animation.fromValue = [NSValue valueWithCGRect:(((CALayer *)self.animator.layer.presentationLayer).frame)];
-  animation.toValue = [NSValue valueWithCGRect:newB];
+  CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"bounds"];
+  animation.fromValue = [NSValue valueWithCGRect:(((CALayer *)self.animator.layer.presentationLayer).bounds)];
+  if (self.t2) {
+    CGPoint p1 = [self.t1 locationInView:self];
+    CGRect newB;
+    CGPoint p2 = [self.t2 locationInView:self];
+    CGPoint mid = midPoint(p1, p2);
+    CGFloat dist = distance(p1, p2);
+    newB = CGRectMake(mid.x - dist/2.0f, mid.y - dist/2.0f, dist, dist);
+    animation.toValue = [NSValue valueWithCGRect:newB];
+  } else {
+    animation.toValue = animation.fromValue;  //stay same size
+  }
 
   return animation;
 }
@@ -154,18 +147,17 @@ CGFloat angle (CGPoint p1, CGPoint p2)
   return animation;
 }
 -(CABasicAnimation *) animateAngle
-{
-  if (!self.t1 || !self.t2) return nil;
-  
-  CABasicAnimation *animation;
-  animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-//  CATransform3D old = ((CALayer *)self.animator.layer.presentationLayer).transform;
-  CGPoint p1 = [self.t1 locationInView:self];
-  CGPoint p2 = [self.t2 locationInView:self];
-//  CGPoint mid = midPoint(p1, p2);
+{  
+  CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
   animation.fromValue = [self.animator.layer.presentationLayer valueForKeyPath:@"transform.rotation.z"];
-  animation.toValue = [NSNumber numberWithFloat:angle(p1, p2)];
-//  CATransform
+  if (self.t2) {
+    CGPoint p1 = [self.t1 locationInView:self];
+    CGPoint p2 = [self.t2 locationInView:self];
+    animation.toValue = [NSNumber numberWithFloat:angle(p1, p2)];
+  } else {
+    animation.toValue = animation.fromValue; //stay the same angle of rotation
+  }
+
   
   return animation;
 }
@@ -175,9 +167,9 @@ CGFloat angle (CGPoint p1, CGPoint p2)
   animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
   animation.cumulative = YES;
   animation.duration = 0.70f;
-  //animation.repeatCount = (unsigned long)(~(0 << 31)); //huge number, close to NSIntegerMax
-  animation.repeatCount = NSIntegerMax;
-  NSLog(@"%f", animation.repeatCount);
+  animation.repeatCount = (unsigned int)~0;
+//  animation.repeatCount = NSIntegerMax;
+  NSLog(@"repCount: %f", animation.repeatCount);
   animation.fromValue = [self.animator.layer.presentationLayer valueForKeyPath:@"transform.rotation.z"];
   animation.toValue = [NSNumber numberWithFloat:M_PI * 2.0f];
 
@@ -185,6 +177,7 @@ CGFloat angle (CGPoint p1, CGPoint p2)
 }
 -(void) performAnimationsWithDuration:(CFTimeInterval)t
 {
+  if (!self.t1 && !self.t2) return; 
   CAAnimationGroup *gr = [CAAnimationGroup animation];
   gr.removedOnCompletion = NO;
   gr.fillMode = kCAFillModeForwards;
@@ -193,10 +186,9 @@ CGFloat angle (CGPoint p1, CGPoint p2)
 
   NSMutableArray *arr = [NSMutableArray array];
   [arr addObject:[self animatePosition]];
-  if (self.t1 && self.t2) {
-    [arr addObject:[self animateBounds]];
-    [arr addObject:[self animateAngle]];
-  }
+  [arr addObject:[self animateBounds]];
+  [arr addObject:[self animateAngle]];
+
   gr.animations = arr;
   [self.animator.layer addAnimation:gr forKey:@"groupAnimation"];
   
