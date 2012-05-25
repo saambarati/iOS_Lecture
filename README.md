@@ -13,6 +13,7 @@ Useful links
 * [NSKeyValueCoding](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html#//apple_ref/doc/uid/10000107i)
 * [CA extentions KVC](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Articles/KVCAdditions.html)
 * [Pragmatic Bookshelf CA book](http://pragprog.com/book/bdcora/core-animation-for-mac-os-x-and-the-iphone)
+* [Objective-C Literals I was talking about briefly](http://weblog.bignerdranch.com/398-objective-c-literals-part-1/)
 
 Feel free to email me with questions or whatever:
 
