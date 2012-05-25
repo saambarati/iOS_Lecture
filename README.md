@@ -15,7 +15,7 @@ Useful links
 * [Pragmatic Bookshelf CA book](http://pragprog.com/book/bdcora/core-animation-for-mac-os-x-and-the-iphone)
 * [Objective-C Literals I was talking about briefly](http://weblog.bignerdranch.com/398-objective-c-literals-part-1/)
 
-Feel free to email me with questions or whatever:
+Feel free to email me with questions or anything else:
 
 [saambarati1@gmail.com](mailto:saambarati1@gmail.com)
 
