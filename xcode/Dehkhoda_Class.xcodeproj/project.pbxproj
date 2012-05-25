@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		523EC36E156480C7007DA368 /* heic0702a_h.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heic0702a_h.jpg; sourceTree = "<group>"; };
-		526D7C3A156E027A004DE07B /* photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo.JPG; path = Dehkhoda_Class/photo.JPG; sourceTree = "<group>"; };
+		526D7C3A156E027A004DE07B /* photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.JPG; sourceTree = "<group>"; };
 		528BB270156388810092349C /* Dehkhoda_Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dehkhoda_Class.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528BB274156388810092349C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		528BB276156388810092349C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,7 +60,6 @@
 		528BB265156388810092349C = {
 			isa = PBXGroup;
 			children = (
-				526D7C3A156E027A004DE07B /* photo.JPG */,
 				528BB27A156388810092349C /* Dehkhoda_Class */,
 				528BB273156388810092349C /* Frameworks */,
 				528BB271156388810092349C /* Products */,
@@ -89,6 +88,7 @@
 		528BB27A156388810092349C /* Dehkhoda_Class */ = {
 			isa = PBXGroup;
 			children = (
+				526D7C3A156E027A004DE07B /* photo.JPG */,
 				523EC36E156480C7007DA368 /* heic0702a_h.jpg */,
 				528BB298156389390092349C /* AnimationView.h */,
 				528BB299156389390092349C /* AnimationView.m */,

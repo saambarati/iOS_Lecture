@@ -12,9 +12,10 @@
 {
 
   if ((self = [super initWithFrame:frame])) {
-    self.animator = [[UIView alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 100.0f, 100.0f)];
+    self.animator = [[UIImageView alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 100.0f, 100.0f)];
     //self.animator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo.JPG"] highlightedImage:nil];
-    self.animator.backgroundColor = [UIColor redColor];
+    self.animator.image = [UIImage imageNamed:@"photo.JPG"];
+    self.animator.backgroundColor = [UIColor clearColor];
     self.animator.frame = CGRectMake(10.0f, 10.0f, 100.0f, 100.0f);
     [self addSubview:self.animator];
 
