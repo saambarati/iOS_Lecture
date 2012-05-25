@@ -12,6 +12,12 @@
 {
 
   if ((self = [super initWithFrame:frame])) {
+      
+    UIImageView *background = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [background setImage:[UIImage imageNamed:@"heic0702a_h.jpg"]];
+    [self addSubview:background];
+      
+      
     self.animator = [[UIImageView alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 100.0f, 100.0f)];
     //self.animator = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo.JPG"] highlightedImage:nil];
     self.animator.image = [UIImage imageNamed:@"photo.JPG"];
