@@ -14,4 +14,8 @@ Useful links
 * [CA extentions KVC](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreAnimation_guide/Articles/KVCAdditions.html)
 * [Pragmatic Bookshelf CA book](http://pragprog.com/book/bdcora/core-animation-for-mac-os-x-and-the-iphone)
 
+Feel free to email me with questions or whatever:
+
+[saambarati1@gmail.com](mailto:saambarati1@gmail.com)
+
 
